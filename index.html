@@ -183,28 +183,28 @@
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_road"></span>
-							<h4 class="cbp-ig-title">GUESS MODE</h4>
+							<a href="guess.html"><h4 class="cbp-ig-title">GUESS MODE</h4>
 							<span class="cbp-ig-category">S-EMPIRE</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_cube"></span>
-							<h4 class="cbp-ig-title">BUYER/SELLER MODE</h4>
+							<a href="buyerseller.html"><h4 class="cbp-ig-title">BUYER/SELLER MODE</h4></a>
 							<span class="cbp-ig-category">S-EMPIRE</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_users"></span>
-							<h4 class="cbp-ig-title">FORTUNE MODE</h4>
+						<a href="fortunelogin.html">	<h4 class="cbp-ig-title">FORTUNE MODE</h4></a>
 							<span class="cbp-ig-category">S-EMPIRE</span>
 						</div>
 					</li>
 					<li>
 						<div class="w3_grid_effect">
 							<span class="cbp-ig-icon w3_ticket"></span>
-							<h4 class="cbp-ig-title">VISITOR MODE</h4>
+							<a href="visitorlogin.html"><h4 class="cbp-ig-title">VISITOR MODE</h4></a>
 							<span class="cbp-ig-category">S-EMPIRE</span>
 						</div>
 					</li>
@@ -703,21 +703,6 @@
                     
                     <input type="submit" name="sub" value="Send Now" class="btn btn-primary">	
 				</form>
-				<?php
-				if(isset($_POST['sub']))
-				{
-					$name =$_POST['name'];
-					$phone = $_POST['phone'];
-					$email = $_POST['email'];
-					$approval = "Not Allowed";
-					$sql = "INSERT INTO `contact`(`fullname`, `phoneno`, `email`,`cdate`,`approval`) VALUES ('$name','$phone','$email',now(),'$approval')" ;
-					
-					
-					if(mysqli_query($con,$sql))
-					echo"OK";
-					
-				}
-				?>
 			</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile1" data-aos="flip-right">
